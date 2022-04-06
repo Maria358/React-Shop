@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+li a:hover , .nav-icon:hover, .active {
+  color: #5ECE7B;
+}
+.nav-icon{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.icons-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.icons-box .nav-icon{
+  margin-left: 25px;
+}
+.bag{
+  margin: 10px;
+  color: #5ECE7B;
+}

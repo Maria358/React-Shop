@@ -1,0 +1,143 @@
+/* Cart styles */
+.cart-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.cart-title span {
+    font-weight: 500;
+}
+
+.cart-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* CartItem styles */
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .cart-item-price {
+    font-weight: 550;
+}
+
+.cart-photo {
+    width: 105px;
+    height: 137px;
+}
+
+/* CartPage styles  */
+.card-item-box {
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.cart-items-box .cart-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1d1f22;
+}
+
+hr {
+    margin-top: 20px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-item .card-photo {
+    width: 200px;
+    height: 200px;
+}
+
+.plus,
+.minus {
+    background-color: white;
+    color: black;
+    border: 1px solid #1d1f22;
+    padding: 12px 12px;
+    transition-duration: 0.4s;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+}
+
+.plus:hover,
+.minus:hover {
+    background-color: black;
+    border: 1px solid #1d1f22;
+    color: white;
+    padding: 12px 12px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.card-sizes-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-sizes-box button {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #1d1f22;
+    box-sizing: border-box;
+    color: black;
+    transition-duration: 0.4s;
+    background: #ffffff;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.card-sizes-box button:hover {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #1d1f22;
+    box-sizing: border-box;
+    color: white;
+    background-color: #000000;
+}
+
+.card-item .item-brand {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.card-item .item-name {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.card-item .item-price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.btns-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-box{
+    margin-right: 40px;
+}
