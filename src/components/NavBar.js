@@ -11,6 +11,7 @@ import { ProductContext } from '../context/productList';
 import { Link } from 'react-router-dom';
 
 
+
 const NavBar = ({ refetch }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { data: all } = useQuery(GET_PRODUCTS_BY_CATEGORY, {
@@ -93,6 +94,7 @@ const NavBar = ({ refetch }) => {
                 <GiBeachBag className="nav-icon bag" />
             </div>
             <div className="icons-box">
+
                 {/* <select onClick={(e) => handleOption(e)}>
                     <option value="USD">USD</option>
                     <option value="GBP">GBP</option>
