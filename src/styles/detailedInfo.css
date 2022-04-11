@@ -1,0 +1,85 @@
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.info-box{
+    width: 25%;
+}
+.detail-photo {
+    width: 400px;
+    height: 500px;
+}
+.info-container .brand {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+}
+.info-container .name {
+    margin-top: -20px;
+    font-weight: 400;
+}
+.info-container .title {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+.info-container .amount {
+    font-weight: 700;
+    font-size: 24px;
+}
+.add-btn {
+    background-color: #5ece7b;
+    border: none;
+    color: #ffffff;
+    left: calc(50% - 105px / 2);
+    top: calc(50% - 20px / 2);
+    padding: 16px 32px;
+    margin: 20px 0 20px 0px;
+    width: 100%;
+    transition-duration: 0.4s;
+}
+.add-btn:hover{
+    background-color: #4aaa64;
+    border: none;
+    color: #ffffff;
+    left: calc(50% - 105px / 2);
+    top: calc(50% - 20px / 2);
+    padding: 16px 32px;
+    margin: 20px 0 20px 0px;
+    width: 100%;
+}
+.sizes-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sizes-box button {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #1d1f22;
+    box-sizing: border-box;
+    color: black;
+    transition-duration: 0.4s;
+    background: #FFFFFF;
+    margin-left: 20px;
+}
+.sizes-box button:hover {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #1d1f22;
+    box-sizing: border-box;
+    color: white;
+    background-color: #000000;
+}
+.description {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.96%;
+}
