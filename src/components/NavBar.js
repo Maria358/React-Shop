@@ -7,6 +7,9 @@ import { BsCurrencyDollar } from 'react-icons/bs';
 import { GiBeachBag } from 'react-icons/gi';
 import { GET_PRODUCTS_BY_CATEGORY } from '../query/product';
 import { useQuery } from '@apollo/client';
+import { ProductContext } from '../context/productList';
+import { Link } from 'react-router-dom';
+
 
 
 const NavBar = ({ refetch }) => {
@@ -63,20 +66,42 @@ const NavBar = ({ refetch }) => {
         }
     };
 
+    const products = React.useContext(ProductContext);
+    const currencies = products.map((el) => el.prices).reduce((prev, el) => {
+        return el.map(el => {
+            return {
+                label: el.currency.label,
+                symbol: el.currency.symbol,
+                amount: el.amount,
+            }
+        });
+    }, []);
+
+    function handleOption(e) {
+
+    }
+
     return (
         <nav className={styles}>
             <div>
                 <ul className={styles.ul} onClick={(e) => handleLinkClick(e)}>
-                    <li key="all"><a id="all" className="active">ALL</a></li>
-                    <li key="tech"><a id="tech">TECH</a></li>
-                    <li key="clothes"><a id="clothes">CLOTHES</a></li>
+                    <li key="all"><Link to="/" id="all" className="active">ALL</Link></li>
+                    <li key="tech"><Link to="/tech" id="tech">TECH</Link></li>
+                    <li key="clothes"><Link to="/clothes" id="clothes">CLOTHES</Link></li>
                 </ul>
             </div>
             <div>
                 <GiBeachBag className="nav-icon bag" />
             </div>
             <div className="icons-box">
-                <BsCurrencyDollar className="nav-icon" />
+
+                {/* <select onClick={(e) => handleOption(e)}>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="RUB">RUB</option>
+                </select> */}
                 <AiOutlineShoppingCart className="nav-icon" onClick={() => setIsOpen(true)} />
             </div>
             {isOpen && <div>
